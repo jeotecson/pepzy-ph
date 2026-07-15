@@ -54,7 +54,6 @@ body {
   transform: translateY(0);
 }
 
-/* Soft Background Blobs */
 .blob {
   position: fixed;
   border-radius: 50%;

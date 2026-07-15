@@ -9,11 +9,11 @@
     if (orderIdBox) orderIdBox.textContent = orderId;
 
     if (successCopy) {
-      successCopy.innerHTML = `Order Request Received! 🎉 Your Order ID is <b>${orderId}</b>. Our team is currently verifying stock with our supplier. Please check your email inbox shortly for your GoTyme QR invoice once your items are secured. Thank you for your patience!`;
+      successCopy.innerHTML = `Order Successfully Placed! 🎉 Your Order ID is <b>${orderId}</b>. We have received your order details and your GoTyme payment receipt. Our team will verify the transaction and ship out your peptides shortly. A confirmation email has been sent!`;
     }
   } else {
     if (successCopy) {
-      successCopy.innerHTML = `Order Request Received! 🎉 Your Order ID is <b>[missing]</b>. Our team is currently verifying stock with our supplier. Please check your email inbox shortly for your GoTyme QR invoice once your items are secured. Thank you for your patience!`;
+      successCopy.innerHTML = `Order Successfully Placed! 🎉 Your Order ID is <b>[missing]</b>. We have received your order details and your GoTyme payment receipt. Our team will verify the transaction and ship out your peptides shortly. A confirmation email has been sent!`;
     }
   }
 })();

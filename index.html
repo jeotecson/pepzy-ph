@@ -144,72 +144,46 @@
             <h2 class="section-title">Our Formulations</h2>
             <p class="section-subtitle">Clinical-grade purity tailored to your specific wellness goals.</p>
         </div>
-        <div class="grid">
-            
-            <div class="card glass">
-                <img src="assets/GHK-CU.png" alt="GHK-CU Vial" class="card-img">
-                <span class="tag">Cellular & Tissue Repair</span>
-                <h3>GHK-CU</h3>
-                <p class="desc">Includes GHK-Cu (Copper Peptides)</p>
-                <div class="details-box">
-                    <br>
-                    <strong>Benefits:</strong>
-                    <ul>
-                        <li>Promotes tissue repair and new blood vessel formation (angiogenesis).</li>
-                        <li>Enlarges hair follicles and extends the 'growth phase' of the hair cycle.</li>
-                        <li>Neutralizes free radicals and protects cells from oxidative stress.</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <span class="price">₱4,500</span>
-                    <button class="btn" onclick="addToCart(1, 'GHK-CU', 4500)">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card glass">
-                <img src="assets/NAD.png" alt="NAD+ Vial" class="card-img">
-                <span class="tag">Cellular Energy & Anti-Aging</span>
-                <h3>NAD+</h3>
-                <p class="desc">Includes NAD+ (Nicotinamide Adenine Dinucleotide)</p>
-                <div class="details-box">
-                    <br>
-                    <strong>Benefits:</strong>
-                    <ul>
-                        <li>Supports ATP production to fight fatigue and improve overall vitality.</li>
-                        <li>Activates sirtuins that help repair DNA and promote healthy cellular aging.</li>
-                        <li>Supports brain function, metabolism, and immune health.</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <span class="price">₱5,200</span>
-                    <button class="btn" onclick="addToCart(2, 'NAD+', 5200)">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="card glass">
-                <img src="assets/Tirzepatide.png" alt="Tirzepatide Vial" class="card-img">
-                <span class="tag">Weight Management & Metabolic Support</span>
-                <h3>Tirzepatide</h3>
-                <p class="desc">Includes Tirzepatide (GIP and GLP-1 Receptor Agonist)</p>
-                <div class="details-box">
-                    <br>
-                    <strong>Benefits:</strong>
-                    <ul>
-                        <li>Helps reduce appetite and promote fat loss while preserving lean muscle.</li>
-                        <li>Supports healthy blood sugar levels, insulin sensitivity, and A1C balance.</li>
-                        <li>Delivers sustainable results with a comprehensive approach.</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <span class="price">₱3,800</span>
-                    <button class="btn" onclick="addToCart(3, 'Tirzepatide', 3800)">Add to Cart</button>
-                </div>
-            </div>
-
-        </div>
+        <div id="productsGrid" class="grid"></div>
+        <div id="productsEmptyState" class="admin-status-note hidden">Loading products…</div>
     </section>
 
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <div class="product-modal-overlay" id="productModalOverlay" onclick="closeProductDetails()"></div>
+    <div class="product-modal" id="productModal" aria-hidden="true">
+      <div class="product-modal-content" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+        <button class="modal-close" type="button" onclick="closeProductDetails()" aria-label="Close product details">×</button>
+        
+        <div class="modal-top-section">
+          <img id="productModalImage" class="modal-img" src="" alt="">
+          <div class="modal-info">
+            <span id="productModalTag" class="tag"></span>
+            <div class="modal-header">
+              <h3 id="productModalTitle"></h3>
+              <div class="modal-price" id="productModalPrice"></div>
+            </div>
+            <p id="productModalDesc"></p>
+            <div class="modal-admin-info" id="productModalAdminInfo">Typically administered to one customer per order.</div>
+            <div class="details-box">
+              <strong>Benefits:</strong>
+              <ul id="productModalBenefits"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-sets">
+          <div class="modal-sets-header">
+            <strong>Complete Set Includes</strong>
+            <span class="modal-sets-sub">Everything you need to start with confidence</span>
+          </div>
+          <div id="productModalSets" class="modal-sets-grid" aria-label="Set includes"></div>
+        </div>
+
+        <button class="btn modal-add-to-cart" id="modalAddToCartBtn" type="button">Add to Cart</button>
+      </div>
+    </div>
+
     <div class="cart-drawer" id="cartDrawer">
         <div class="cart-header">
             <h2>Your Order</h2>
@@ -220,55 +194,77 @@
             <p style="text-align:center; color: #888; margin-top: 2rem;">Your cart is empty.</p>
         </div>
 
-        <div class="checkout-form" id="checkoutFormWrap">
-            <h3>Secure Checkout</h3>
+        <div class="total-row" style="margin: 1rem 0; font-size: 1rem;">
+            <span>Cart Total:</span>
+            <span id="cartTotal">₱0.00</span>
+        </div>
 
-            <form id="orderForm" onsubmit="processCheckout(event)">
+<div class="checkout-form" id="checkoutFormWrap">
+    <h3>Secure Checkout</h3>
+
+    <form id="orderForm" onsubmit="processCheckout(event)">
+        <div class="checkout-split">
+            
+            <div class="checkout-left">
+                <h4>1. Shipping Details</h4>
                 <div class="form-group">
-                    <label>Name</label>
+                    <label>Full Name</label>
                     <input type="text" required placeholder="Juan Dela Cruz" id="fullNameInput">
                 </div>
-
                 <div class="form-group">
-                    <label>Email</label>
+                    <label>Email Address</label>
                     <input type="email" required placeholder="juan@email.com" id="emailInput">
                 </div>
-
                 <div class="form-group">
                     <label>Phone Number</label>
                     <input type="tel" required placeholder="09XX XXX XXXX" id="phoneInput">
                 </div>
-
                 <div class="form-group">
-                    <label>Shipping Address</label>
-                    <input type="text" required placeholder="123 Wellness St, Manila" id="addressInput">
+                    <label>Complete Shipping Address</label>
+                    <textarea required placeholder="123 Wellness St, Manila" id="addressInput" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="checkout-right">
+                <h4>2. Payment & Receipt Upload</h4>
+                
+                <div class="total-row checkout-total-row">
+                    <span>Order Total:</span>
+                    <span id="checkoutTotal">₱0.00</span>
                 </div>
 
-                <div class="form-group" style="margin-top: 1.2rem;">
-                    <label>Payment Selection</label>
-                    <div style="background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); border-radius: 12px; padding: 0.95rem 1rem;">
-                        <div style="font-weight: 900; color: var(--text-dark);">Manual Payment via GoTyme QR</div>
-                        <div style="margin-top: 0.25rem; font-size: 0.9rem; color: var(--text-light);">
-                            You’ll receive your GoTyme QR invoice by email after stock verification.
-                        </div>
+                <div class="qr-payment-box">
+                    <p class="qr-copy">Scan the GoTyme QR code using your banking app and pay the exact Order Total below. Please save your transaction receipt screenshot!</p>
+                    <div class="qr-image">
+                        <img src="assets/gotyme-qr.png" alt="GoTyme QR code">
                     </div>
                 </div>
 
-                <div class="total-row">
-                    <span>Total:</span>
-                    <span id="cartTotal">₱0.00</span>
+                <div class="form-group receipt-upload-group">
+                    <label>Upload your GoTyme Transaction Receipt <span class="required-star">*</span></label>
+                    <input type="file" id="receiptInput" accept="image/jpeg,image/jpg,image/png" required onchange="previewReceipt(event)">
+                    <div id="receiptPreviewContainer" class="receipt-preview">
+                        <img id="receiptImage" src="" alt="Receipt Preview">
+                        <button type="button" class="remove-btn" onclick="removeReceipt()">✕ Remove</button>
+                    </div>
                 </div>
 
-                <div class="trust-banner">
-                    <strong>✨ Stock Protection Guarantee</strong>
-                    <p>Because our high-quality peptides are in heavy demand, we manually verify our warehouse stock for every single order. We will never take your money until we are 100% sure your items are ready to ship! We will email your GoTyme payment instructions as soon as your batch is secured.</p>
-                </div>
-
-                <button type="submit" class="btn" style="width: 100%;">Submit Order Request</button>
-            </form>
-
+                <button type="submit" class="btn" id="submitBtn">Place Order & Submit</button>
+            </div>
+            
         </div>
+    </form>
+</div>
     </div>
+
+    <section id="contact" class="contact-section reveal">
+        <div class="contact-container glass">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Ready to start your wellness journey? Contact us directly.</p>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jeotecson13@gmail.com" target="_blank" class="btn">Contact Us via Gmail</a>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-logo">

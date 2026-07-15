@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepzy Admin</title>
+  <link rel="icon" type="image/png" href="../assets/pepzy_favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header glass">
+      <div>
+        <h1 class="admin-title">Pepzy Admin</h1>
+        <p id="adminStatusNote" class="admin-status-note hidden"></p>
+      </div>
+      <button id="logoutBtn" class="btn hidden">Logout</button>
+    </header>
+
+    <section id="loginSection" class="admin-card glass">
+      <h2>Admin Login</h2>
+      <form id="adminLoginForm" class="admin-form">
+        <label>
+          Username
+          <input id="adminUsername" type="text" autocomplete="username" required />
+        </label>
+        <label>
+          Password
+          <input id="adminPassword" type="password" autocomplete="current-password" required />
+        </label>
+        <button type="submit" class="btn">Sign In</button>
+        <p id="loginError" class="admin-error"></p>
+      </form>
+    </section>
+
+    <section id="dashboardSection" class="admin-card glass hidden">
+      <div class="admin-panel">
+        <div>
+          <h2>Orders</h2>
+          <p id="ordersCount">Loading orders…</p>
+        </div>
+        <div>
+          <label for="statusFilter">Filter by status</label>
+          <select id="statusFilter" class="admin-status-select">
+            <option value="">All</option>
+            <option value="REQUEST_RECEIVED">Request Received</option>
+            <option value="RECEIPT_CONFIRMED">Receipt Confirmed</option>
+            <option value="SHIPPED">Shipped</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="admin-card-content">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Date / Time</th>
+              <th>Customer</th>
+              <th>Items</th>
+              <th>Total</th>
+              <th>Receipt</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody"></tbody>
+        </table>
+        <div id="ordersCardsContainer" class="admin-cards hidden" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="productManagementSection" class="admin-card glass hidden">
+      <div class="admin-panel">
+        <div>
+          <h2>Products</h2>
+          <p>Manage the catalog and stock availability.</p>
+        </div>
+        <div>
+          <button id="newProductBtn" class="btn">New Product</button>
+        </div>
+      </div>
+
+      <div class="admin-card-content">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="productsTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div id="productFormOverlay" class="admin-receipt-modal-overlay hidden" aria-hidden="true"></div>
+    <div id="productFormModal" class="admin-receipt-modal hidden" aria-hidden="true">
+      <button id="productFormClose" class="admin-receipt-close" aria-label="Close product editor">×</button>
+      <div class="admin-card">
+        <h2 id="productFormTitle">New Product</h2>
+        <form id="productForm" class="admin-form">
+          <label>
+            Name
+            <input id="productName" type="text" required />
+          </label>
+          <label>
+            Dosage
+            <input id="productDosage" type="text" />
+          </label>
+          <label>
+            Tag
+            <input id="productTag" type="text" />
+          </label>
+          <label>
+            Description
+            <textarea id="productDesc" rows="3" required></textarea>
+          </label>
+          <label>
+            Image path
+            <input id="productImg" type="text" required />
+          </label>
+          <label>
+            Price
+            <input id="productPrice" type="number" min="0" step="1" required />
+          </label>
+          <label>
+            In stock
+            <select id="productInStock">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </label>
+          <label>
+            Benefits (one per line)
+            <textarea id="productBenefits" rows="4"></textarea>
+          </label>
+          <label>
+            Set items (one per line, format: Name | Qty)
+            <textarea id="productSets" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn">Save Product</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="receiptModalOverlay" class="admin-receipt-modal-overlay hidden" aria-hidden="true"></div>
+    <div id="receiptModal" class="admin-receipt-modal hidden" aria-hidden="true">
+      <button id="receiptModalClose" class="admin-receipt-close" aria-label="Close receipt preview">×</button>
+      <img id="receiptModalImage" src="" alt="Receipt preview" />
+    </div>
+  </main>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

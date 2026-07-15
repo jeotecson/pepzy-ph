@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "name": "TIRZEPATIDE",
+    "dosage": "15mg",
+    "tag": "Weight Management & Metabolic Support",
+    "desc": "GIP and GLP-1 Receptor Agonist",
+    "img": "assets/Tirzepatide.png",
+    "price": 2700,
+    "inStock": true,
+    "benefits": [
+      "Helps reduce appetite and promote fat loss while preserving lean muscle.",
+      "Supports healthy blood sugar levels, insulin sensitivity, and A1C balance.",
+      "Delivers sustainable results with a comprehensive approach."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "Tirzepatide 15mg vial", "qty": "1 vial", "img": "assets/Tirzepatide.png" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "TIRZEPATIDE",
+    "dosage": "30mg",
+    "tag": "Weight Management & Metabolic Support",
+    "desc": "GIP and GLP-1 Receptor Agonist",
+    "img": "assets/Tirzepatide.png",
+    "price": 3700,
+    "inStock": true,
+    "benefits": [
+      "Helps reduce appetite and promote fat loss while preserving lean muscle.",
+      "Supports healthy blood sugar levels, insulin sensitivity, and A1C balance.",
+      "Delivers sustainable results with a comprehensive approach."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "Tirzepatide 30mg vial", "qty": "1 vial", "img": "assets/Tirzepatide.png" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "NAD+",
+    "dosage": "500mg",
+    "tag": "Cellular Energy & Anti-Aging",
+    "desc": "Nicotinamide Adenine Dinucleotide",
+    "img": "assets/nad.png",
+    "price": 2300,
+    "inStock": true,
+    "benefits": [
+      "Supports ATP production to fight fatigue and improve overall vitality.",
+      "Activates sirtuins that help repair DNA and promote healthy cellular aging.",
+      "Supports brain function, metabolism, and immune health."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "NAD+ 500mg vial", "qty": "1 vial", "img": "assets/nad.png" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "GHK-CU",
+    "dosage": "100mg",
+    "tag": "Cellular & Tissue Repair",
+    "desc": "Copper Tripeptide-1",
+    "img": "assets/GHK-CU.png",
+    "price": 2500,
+    "inStock": true,
+    "benefits": [
+      "Promotes tissue repair and new blood vessel formation (angiogenesis).",
+      "Enlarges hair follicles and extends the growth phase of the hair cycle.",
+      "Neutralizes free radicals and protects cells from oxidative stress."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "GHK-Cu 100mg vial", "qty": "1 vial", "img": "assets/GHK-CU.png" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "5-AMINO",
+    "dosage": "50mg",
+    "tag": "Cellular Health & Rejuvenation",
+    "desc": "5-Aminolevulinic Acid",
+    "img": "assets/sample_photo.png",
+    "price": 2700,
+    "inStock": true,
+    "benefits": [
+      "Supports cellular energy production and mitochondrial function.",
+      "Promotes skin health and radiance from within.",
+      "Enhances overall cellular rejuvenation and vitality."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "5-Amino 50mg vial", "qty": "1 vial", "img": "assets/sample_photo.png" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "LIPO-C",
+    "dosage": "standard",
+    "tag": "Immunity & Antioxidant Support",
+    "desc": "Liposomal Vitamin C",
+    "img": "assets/sample_photo.png",
+    "price": 2200,
+    "inStock": true,
+    "benefits": [
+      "Enhanced absorption with liposomal delivery technology.",
+      "Powerful antioxidant support for immune health.",
+      "Promotes collagen synthesis and cellular repair."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "Liposomal Vitamin C vial", "qty": "1 vial", "img": "assets/sample_photo.png" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "LEMON BOTTLE",
+    "dosage": "standard",
+    "tag": "Advanced Fat Dissolving Solution",
+    "desc": "Fat Dissolving Solution",
+    "img": "assets/lemonbottle.jpeg",
+    "price": 2000,
+    "inStock": true,
+    "benefits": [
+      "Advanced formula for targeted fat reduction.",
+      "Supports body contouring and definition.",
+      "Professional-grade solution with proven results."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "Lemon Bottle Solution", "qty": "1 bottle", "img": "assets/lemonbottle.jpeg" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "KPV",
+    "dosage": "10mg",
+    "tag": "Immune & Gut Health Support",
+    "desc": "Kinetic Peptide Valine",
+    "img": "assets/sample_photo.png",
+    "price": 2600,
+    "inStock": true,
+    "benefits": [
+      "Supports immune system function and natural defenses.",
+      "Promotes healthy gut barrier and intestinal health.",
+      "Helps maintain balanced immune response and cellular protection."
+    ],
+    "sets": [
+      { "name": "Rubbing Alcohol (70% Isopropyl)", "qty": "1 bottle", "img": "assets/sample_photo.png" },
+      { "name": "Alcohol Pads", "qty": "2 pcs", "img": "assets/sample_photo.png" },
+      { "name": "Wet Wipes", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Syringe (Large)", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Insulin Syringe", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "Bacteriostatic BAC Water (BACTERIOSTATIC WATER)", "qty": "1 vial", "img": "assets/sample_photo.png" },
+      { "name": "Peptide Case", "qty": "1 pc", "img": "assets/sample_photo.png" },
+      { "name": "User Guide & Manual", "qty": "1 booklet", "img": "assets/sample_photo.png" },
+      { "name": "KPV 10mg vial", "qty": "1 vial", "img": "assets/sample_photo.png" }
+    ]
+  }
+]

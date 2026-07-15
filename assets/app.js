@@ -105,7 +105,7 @@ const DEFAULT_STORE_PRODUCTS = [
     dosage: '15mg',
     tag: 'Weight Management & Metabolic Support',
     desc: 'GIP and GLP-1 Receptor Agonist',
-    img: 'assets/Tirzepatide.png',
+    img: 'assets/tirzepatide-15.png',
     price: 2700,
     inStock: true,
     benefits: [
@@ -122,7 +122,7 @@ const DEFAULT_STORE_PRODUCTS = [
       { name: 'Bacteriostatic BAC Water (BACTERIOSTATIC WATER)', qty: '1 vial', img: 'assets/sample_photo.png' },
       { name: 'Peptide Case', qty: '1 pc', img: 'assets/sample_photo.png' },
       { name: 'User Guide & Manual', qty: '1 booklet', img: 'assets/sample_photo.png' },
-      { name: 'Tirzepatide 15mg vial', qty: '1 vial', img: 'assets/Tirzepatide.png' },
+      { name: 'Tirzepatide 15mg vial', qty: '1 vial', img: 'assets/tirzepatide-15.png' },
     ],
   },
   {
@@ -131,7 +131,7 @@ const DEFAULT_STORE_PRODUCTS = [
     dosage: '30mg',
     tag: 'Weight Management & Metabolic Support',
     desc: 'GIP and GLP-1 Receptor Agonist',
-    img: 'assets/Tirzepatide.png',
+    img: 'assets/tirzepatide-30.png',
     price: 3700,
     inStock: true,
     benefits: [
@@ -148,7 +148,7 @@ const DEFAULT_STORE_PRODUCTS = [
       { name: 'Bacteriostatic BAC Water (BACTERIOSTATIC WATER)', qty: '1 vial', img: 'assets/sample_photo.png' },
       { name: 'Peptide Case', qty: '1 pc', img: 'assets/sample_photo.png' },
       { name: 'User Guide & Manual', qty: '1 booklet', img: 'assets/sample_photo.png' },
-      { name: 'Tirzepatide 30mg vial', qty: '1 vial', img: 'assets/Tirzepatide.png' },
+      { name: 'Tirzepatide 30mg vial', qty: '1 vial', img: 'assets/tirzepatide-30.png' },
     ],
   },
   {
@@ -209,7 +209,7 @@ const DEFAULT_STORE_PRODUCTS = [
     dosage: '50mg',
     tag: 'Cellular Health & Rejuvenation',
     desc: '5-Aminolevulinic Acid',
-    img: 'assets/sample_photo.png',
+    img: 'assets/5-amino.png',
     price: 2700,
     inStock: true,
     benefits: [
@@ -226,7 +226,7 @@ const DEFAULT_STORE_PRODUCTS = [
       { name: 'Bacteriostatic BAC Water (BACTERIOSTATIC WATER)', qty: '1 vial', img: 'assets/sample_photo.png' },
       { name: 'Peptide Case', qty: '1 pc', img: 'assets/sample_photo.png' },
       { name: 'User Guide & Manual', qty: '1 booklet', img: 'assets/sample_photo.png' },
-      { name: '5-Amino 50mg vial', qty: '1 vial', img: 'assets/sample_photo.png' },
+      { name: '5-Amino 50mg vial', qty: '1 vial', img: 'assets/5-amino.png' },
     ],
   },
   {
@@ -235,7 +235,7 @@ const DEFAULT_STORE_PRODUCTS = [
     dosage: 'standard',
     tag: 'Immunity & Antioxidant Support',
     desc: 'Liposomal Vitamin C',
-    img: 'assets/sample_photo.png',
+    img: 'assets/lipo-c.png',
     price: 2200,
     inStock: true,
     benefits: [
@@ -252,7 +252,7 @@ const DEFAULT_STORE_PRODUCTS = [
       { name: 'Bacteriostatic BAC Water (BACTERIOSTATIC WATER)', qty: '1 vial', img: 'assets/sample_photo.png' },
       { name: 'Peptide Case', qty: '1 pc', img: 'assets/sample_photo.png' },
       { name: 'User Guide & Manual', qty: '1 booklet', img: 'assets/sample_photo.png' },
-      { name: 'Liposomal Vitamin C vial', qty: '1 vial', img: 'assets/sample_photo.png' },
+      { name: 'Liposomal Vitamin C vial', qty: '1 vial', img: 'assets/lipo-c.png' },
     ],
   },
   {
@@ -287,7 +287,7 @@ const DEFAULT_STORE_PRODUCTS = [
     dosage: '10mg',
     tag: 'Immune & Gut Health Support',
     desc: 'Kinetic Peptide Valine',
-    img: 'assets/sample_photo.png',
+    img: 'assets/kpv.png',
     price: 2600,
     inStock: true,
     benefits: [
@@ -304,7 +304,7 @@ const DEFAULT_STORE_PRODUCTS = [
       { name: 'Bacteriostatic BAC Water (BACTERIOSTATIC WATER)', qty: '1 vial', img: 'assets/sample_photo.png' },
       { name: 'Peptide Case', qty: '1 pc', img: 'assets/sample_photo.png' },
       { name: 'User Guide & Manual', qty: '1 booklet', img: 'assets/sample_photo.png' },
-      { name: 'KPV 10mg vial', qty: '1 vial', img: 'assets/sample_photo.png' },
+      { name: 'KPV 10mg vial', qty: '1 vial', img: 'assets/kpv.png' },
     ],
   },
 ];
